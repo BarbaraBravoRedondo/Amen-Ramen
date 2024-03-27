@@ -47,7 +47,7 @@ const Trolley = ({ showOrder, setShowOrder, cart, removeFromCart, orderNumber })
             <div className="bg-[#262837] absolute w-full bottom-0 left-0 p-4">
               <div className="flex items-center justify-between mb-6">
                 <span className="text-gray-400">Subtotal</span>
-                <span>{`$${subtotal}`}</span>
+                <span>{`${subtotal}€`}</span>
               </div>
               <div>
                 <button className="bg-[#ec7c6a] w-full py-2 px-4 rounded-lg">
