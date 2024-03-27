@@ -31,16 +31,16 @@
 ## Estructura del Proyecto
 
 El proyecto sigue una estructura de directorios típica de una aplicación React:
-amen-ramen/
-├── public/ # Archivos estáticos y HTML principal
-├── src/ # Código fuente de la aplicación
-│ ├── components/ # Componentes React de la aplicación
-│ ├── data/ # Archivos JSON que contienen datos de menú simulados
-│ ├── styles/ # Estilos globales y configuración de Tailwind CSS
-│ └── App.js # Archivo principal de la aplicación
-├── package.json # Archivo de configuración de npm con las dependencias del proyecto
-└── README.md # Documentación del proyecto (este archivo)
-## Contribución
+
+- **amen-ramen/**
+  - **public/**: Archivos estáticos y HTML principal
+  - **src/**: Código fuente de la aplicación
+    - **components/**: Componentes React de la aplicación
+    - **data/**: Archivos JSON que contienen datos de menú simulados
+    - **styles/**: Estilos globales y configuración de Tailwind CSS
+    - **App.js**: Archivo principal de la aplicación
+  - **package.json**: Archivo de configuración de npm con las dependencias del proyecto
+  - **README.md**: Documentación del proyecto (este archivo)
 
 ¡Las contribuciones son bienvenidas! Si encuentras algún error, tienes alguna idea para mejorar la aplicación o quieres añadir nuevas características, no dudes en abrir un issue o enviar un pull request.
 
