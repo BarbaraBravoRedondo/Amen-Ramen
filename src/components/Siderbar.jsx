@@ -17,8 +17,8 @@ function Siderbar( {showMenu}) {
       <div>
         <ul className=" pl-4">
           {' '}
-          <li className="text-2xl text-gray-300 uppercase font-bold text-center my-5 ">
-            Logo
+          <li className=" my-5 ">
+          <img src="Logo.png" className='scale-150' alt="" />
           </li>
           <li className="bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl ">
             <a
