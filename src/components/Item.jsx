@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Item = ({ dish, addToCart }) => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   const handleClick = () => {
-   
     setIsAnimating(true);
 
     addToCart(dish);
@@ -22,17 +21,17 @@ const Item = ({ dish, addToCart }) => {
         className="w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full"
       />
       <p className="text-sm">{dish.description}</p>
-      <span className="text-xs text-gray-500">${dish.price}</span>
+      <span className="text-xs text-gray-500">{dish.price} €</span>
 
       <button
         onClick={handleClick}
         className={`bg-[#ec7c6a] text-white mt-2 py-1 px-2 rounded-md ${
-          isAnimating ? "animate-pulse transform scale-110" : ""
+          isAnimating ? 'animate-pulse transform scale-110' : ''
         }`}
         disabled={isAnimating}
-        style={{ cursor: "pointer" }} 
+        style={{ cursor: 'pointer' }}
       >
-        {isAnimating ? "Adding..." : "Add to Cart"}
+        {isAnimating ? 'Adding...' : 'Add to Cart'}
       </button>
     </div>
   );

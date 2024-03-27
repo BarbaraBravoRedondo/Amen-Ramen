@@ -37,13 +37,13 @@ function Header({ onSearch }) {
           href="#"
           className="relative py-2 pr-4 before:w-1/2 before:h-[2px] before:absolute before:bg-[#ec7c6a] before:left-0 before:rounded-full before:-bottom-[1px] text-[#ec7c6a]"
         >
-          Hot dishes
+         Ramen
         </a>
         <a href="#" className="py-2 pr-4">
           Cold dishes
         </a>
         <a href="#" className="py-2 pr-4">
-          Soup
+          Rice
         </a>
         <a href="#" className="py-2">
           Grill

@@ -1,0 +1,39 @@
+
+[
+    {
+      "id": 1,
+      "img": "plato1.png",
+      "description": "CHA-SHU MISO",
+      "price": 12.80,
+      "type": "Ramen"
+    },
+    {
+      "id": 2,
+      "img": "plato3.png",
+      "description": "YASAI MISO (Vg)",
+      "price": 12.00,
+      "type": "Ramen"
+    },
+    {
+      "id": 3,
+      "img": "plato2.png",
+      "description": "SPICY SUKIYAKI  ",
+      "price": 13.99,
+      "type": "Ramen"
+    },
+    {
+      "id": 4,
+      "img": "plato4.png",
+      "description": "MALA CHASHU",
+      "price": 13.50,
+      "type": "Ramen"
+    },
+    {
+      "id": 5,
+      "img": "plato5.png",
+      "description": "TONKUSHU ",
+      "price": 12.00,
+      "type": "Ramen"
+    }
+  ]
+  

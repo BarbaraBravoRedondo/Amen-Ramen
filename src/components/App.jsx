@@ -11,46 +11,10 @@ import {
   RiMenu3Fill,
   RiCloseLine,
 } from 'react-icons/ri';
+import ramen from './data/Ramen.json';
 
 // Definir dishes fuera de la función App para que esté disponible en todo el componente
-const dishes = [
-  {
-    id: 1,
-    img: 'plato1.png',
-    description: 'Speacy seasoned seafood noodles',
-    price: 2.29,
-    inventory: 20,
-  },
-  {
-    id: 2,
-    img: 'plato2.png',
-    description: 'Another delicious dish noodles',
-    price: 3.99,
-    inventory: 15,
-  },
-  {
-    id: 3,
-    img: 'plato3.png',
-    description: 'Speacy seasoned seafood noodles',
-    price: 2.29,
-    inventory: 20,
-  },
-  {
-    id: 4,
-    img: 'plato4.png',
-    description: 'Speacy seasoned seafood noodles',
-    price: 2.29,
-    inventory: 20,
-  },
-  {
-    id: 5,
-    img: 'plato5.png',
-    description: 'Speacy seasoned seafood noodles',
-    price: 2.29,
-    inventory: 20,
-  },
-  // Agrega más platos aquí
-];
+
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -73,9 +37,9 @@ function App() {
   const handleSearch = (term) => {
     setSearchTerm(term);
     if (term.trim() === '') {
-      setFilteredDishes(dishes); // Si no hay término de búsqueda, mostrar todos los platos
+      setFilteredDishes(ramen); 
     } else {
-      const filtered = dishes.filter((dish) =>
+      const filtered = ramen.filter((dish) =>
         dish.description.toLowerCase().includes(term.toLowerCase())
       );
       setFilteredDishes(filtered);
@@ -99,10 +63,10 @@ function App() {
   };
 
   useEffect(() => {
-    // Generar un número de pedido aleatorio cuando se monta el componente
-    const randomNumber = Math.floor(Math.random() * 1000000) + 1; // Número aleatorio entre 1 y 1000000
+  
+    const randomNumber = Math.floor(Math.random() * 1000000) + 1; 
     setOrderNumber(randomNumber);
-    // Filtrar los platos inicialmente cuando se monta el componente
+   
     handleSearch(searchTerm);
   }, []);
 

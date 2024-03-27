@@ -9,7 +9,7 @@ const Trolley = ({ showOrder, setShowOrder, cart, removeFromCart, orderNumber })
     <div className={`lg:col-span-2 fixed top-0 bg-[#1F1D2B] w-full lg:w-96 lg:right-0 h-full transition-all z-50 ${showOrder ? 'right-0' : '-right-full'}`}>
       <div className="relative pt-16 lg:pt-8 text-gray-300 p-8 h-full">
         <RiCloseLine onClick={() => setShowOrder(false)} className="lg:hidden absolute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full text-xl" />
-        <h1 className="text-2xl my-4">#{orderNumber}</h1>
+        <h1 className="text-2xl my-4">Order Nº #{orderNumber}</h1>
         {cart.length > 0 ? (
           <div className="overflow-y-auto max-h-96">
             <div>
@@ -20,22 +20,22 @@ const Trolley = ({ showOrder, setShowOrder, cart, removeFromCart, orderNumber })
                       <img src={item.img} alt={item.description} className="w-10 h-10 object-cover" />
                       <div>
                         <h5 className="text-sm">{item.description}</h5>
-                        <p className="text-xs text-gray-500">{`${item.price}`}</p>
+                        <p className="text-xs text-gray-500">{`${item.type}`}</p>
                       </div>
                     </div>
                     <div>
-                      <span>{item.quantity}</span>
+                      <span className='p-2'>{item.quantity}</span>
                     </div>
                     <div>
-                      <span>{`${item.price }`}</span>
+                      <span>{`${item.price }€`}</span>
                     </div>
                   </div>
                   <div className="grid grid-cols-6 items-center">
                     <form className="col-span-5">
-                      <input type="text" className="bg-[#1F1D2B] py-2 px-4 rounded-lg outline-none" placeholder="Order note..." />
+                      <input type="text" className="bg-[#1F1D2B] py-2 px-4 w-full rounded-lg outline-none" placeholder="Order note..." />
                     </form>
                     <div>
-                      <button className="border border-red-500 p-2 rounded-lg" onClick={() => removeFromCart(item.id)}>
+                      <button className="border border-red-500 p-2 ml-2 rounded-lg" onClick={() => removeFromCart(item.id)}>
                         <RiDeleteBin6Line className="text-red-500" />
                       </button>
                     </div>
