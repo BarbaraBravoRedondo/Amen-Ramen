@@ -15,7 +15,7 @@ const Item = ({ dish, addToCart }) => {
   };
 
   return (
-    <div className="bg-[#262837] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+    <div className="bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
       <img
         src={dish.img}
         alt={dish.description}
