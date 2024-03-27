@@ -1,7 +1,10 @@
 # Amen Ramen - Aplicación de Pedido de Ramen a Domicilio
 
 ¡Bienvenido a Amen Ramen! Esta es una aplicación web diseñada para permitir a los usuarios ordenar deliciosos platos de ramen desde la comodidad de sus hogares. Con Amen Ramen, puedes explorar una variedad de opciones de ramen, agregar tus platos favoritos al carrito y realizar pedidos de manera rápida y sencilla.
-![Amen Ramen](/images/amen.png)
+
+<div align="center" style="max-width: 20%;">
+  <img src="./src/images/Amen.png" alt="Amen Ramen">
+</div>
 
 ## Características Principales
 
