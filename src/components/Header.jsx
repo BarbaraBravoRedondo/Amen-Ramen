@@ -1,22 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { RiSearch2Line } from 'react-icons/ri';
 
 function Header({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [currentDate, setCurrentDate] = useState('');
+
+  useEffect(() => {
+   
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = today.toLocaleDateString('en-US', options);
+    setCurrentDate(formattedDate);
+  }, []); 
 
   const handleChange = (event) => {
     const term = event.target.value;
     setSearchTerm(term);
-    onSearch(term); // Llamar a la función de búsqueda proporcionada por la prop onSearch
+    onSearch(term); 
   };
 
   return (
     <header>
-      {/* Title and search */}
+
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
-        <div>
           <h1 className="text-2xl text-gray-300">Amen RameN</h1>
-          <p className="text-gray-500">07 octubre 2022</p>
+          <p className="text-gray-500">{currentDate}</p>
         </div>
         <form>
           <div className="w-full relative">
@@ -30,8 +38,8 @@ function Header({ onSearch }) {
             />
           </div>
         </form>
-      </div>
-      {/* Tabs */}
+    
+ 
       <nav className="text-gray-300 flex items-center justify-between md:justify-start md:gap-8 border-b mb-6">
         <a
           href="#"

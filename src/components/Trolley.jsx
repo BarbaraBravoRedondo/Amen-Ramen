@@ -2,7 +2,7 @@ import React from 'react';
 import { RiCloseLine, RiDeleteBin6Line } from 'react-icons/ri';
 
 const Trolley = ({ showOrder, setShowOrder, cart, removeFromCart, orderNumber }) => {
-  // Calcular el subtotal redondeado a dos decimales
+
   const subtotal = cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
 
   return (
@@ -43,7 +43,7 @@ const Trolley = ({ showOrder, setShowOrder, cart, removeFromCart, orderNumber })
                 </div>
               ))}
             </div>
-            {/* Utilizar el subtotal redondeado a dos decimales */}
+      
             <div className="bg-[#262837] absolute w-full bottom-0 left-0 p-4">
               <div className="flex items-center justify-between mb-6">
                 <span className="text-gray-400">Subtotal</span>
